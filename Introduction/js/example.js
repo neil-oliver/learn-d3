@@ -71,7 +71,7 @@
         .range([height, 0])
 
     // optional scales
-    const sizeScale = d3.scaleSequential()
+    const sizeScale = d3.scaleLinear()
         .domain(d3.extent(data, d => d.pop))
         .range([1, 20])
 
